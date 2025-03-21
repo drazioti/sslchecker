@@ -158,8 +158,8 @@ def sendClientHello(sock, client_hello):
         #print("Something went wrong. Server sent an alert message.")
         print("Secure")
         #printResults(m)
-        #sys.exit()
-        return v,m[0]
+        sys.exit()
+        #return v,m[0]
     elif t == 22:
         return v, m[0]
 
