@@ -176,6 +176,7 @@ def sendHeartbeat(sock, heartbeat):
         if t is None:
             print('No Heartbeat response received.')
             print('Secure.')
+            return
             #sys.exit()
 
         # type 24 -> Heartbeat related message
@@ -191,6 +192,7 @@ def sendHeartbeat(sock, heartbeat):
         if t == 21:
             print('ALERT! Server returned error.')
             print('Secure.')
+            return
             #printResults(m)
             #sys.exit()
 
